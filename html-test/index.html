@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/theme.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>Match state</title>
+</head>
+<body>
+    <div class="container primary-font">
+    <!-- Prematch -->
+    <div class="card">
+        <div class="card-background-not-started">
+            <div class="card-title">
+            <p class="card-title">World Cup 2014 - Group A</p>
+            <p class="card-subtitle">International</p>
+        </div>
+        <div class="card-content">
+            <div class="match">
+                <div class="match-team1">
+                    <img src="" alt="">
+                    <p class="team1-name">Germany</p>
+                </div>
+                <div class="match-info">
+                    <p>VS</p>
+                    <p>9:00</p>
+                    <p>23/12/13</p>
+                </div>
+                <div class="match-team2">
+                    <img src="" alt="">
+                    <p class="team2-name">Italy</p>
+                </div>
+            </div>
+            <div class="match-status">
+                <p class="card-status-text">NOT STARTED</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Ongoing match -->
+     <div class="card">
+        <div class="card-background-ongoing">
+            <div class="card-title">
+            <p class="card-title">World Cup 2014 - Group A</p>
+            <p class="card-subtitle">International</p>
+        </div>
+        <div class="card-content">
+            <div class="match">
+                <div class="match-team1">
+                    <img src="" alt="">
+                    <p class="team1-name">Germany</p>
+                </div>
+                <div class="match-info match-info-ongoing-ended secondary-font">
+                    <p>1</p>
+                    <p>:</p>
+                    <p>0</p>
+                </div>
+                <div class="match-team2">
+                    <img src="" alt="">
+                    <p class="team2-name">Italy</p>
+                </div>
+            </div>
+            <div class="match-status">
+                <p class="card-status-text  ongoing">2. HALF</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Match ended -->
+     <div class="card">
+        <div class="card-background-ended">
+            <div class="card-title">
+            <p class="card-title">World Cup 2014 - Group A</p>
+            <p class="card-subtitle">International</p>
+        </div>
+        <div class="card-content">
+            <div class="match">
+                <div class="match-team1">
+                    <img src="" alt="">
+                    <p class="team1-name">Germany</p>
+                </div>
+                <div class="match-info match-info-ongoing-ended secondary-font">
+                    <p>1</p>
+                    <p>:</p>
+                    <p>0</p>
+                </div>
+                <div class="match-team2">
+                    <img src="" alt="">
+                    <p class="team2-name">Italy</p>
+                </div>
+            </div>
+            <div class="match-status">
+                <p class="card-status-text ended">ENDED</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+</html>

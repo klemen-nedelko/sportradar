@@ -1,0 +1,22 @@
+:root{
+    --color-primary: #fff;
+    --color-prematch: #7e7c7c;
+    --color-ongoing:orange;
+    --color-ended:green;
+    --background-prematch:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/bg-prematch.jpg');
+    --background-ongoing:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/bg-live.jpg');
+    --background-ended:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/bg-postmatch.jpg');
+}
+
+/* Fonts */
+
+.primary-font{
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(18rem/16);
+    font-weight: 500;
+}
+.secondary-font{
+    font-family: 'Open Sans', sans-serif;
+    font-size: calc(26rem/16);
+    font-weight: 700;
+}
