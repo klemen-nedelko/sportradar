@@ -1,0 +1,165 @@
+.card {
+  /* Common styles for all match statuses */
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 450px;
+  color: white;
+}
+
+.match-card{
+  width: 450px !important;
+}
+.card .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card .card-header img {
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+.card .card-header span {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.card .card-content {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.card .match  {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  font-weight: bold;
+  gap: 30px;
+}
+
+.card .match-time {
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.card .result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 30px;
+}
+
+.card .match-status {
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 5px;
+  color: white
+}
+
+/* Styles for specific match statuses */
+.card.not {
+  background-image: url(../assets/bg-prematch.jpg);
+}
+.card.ended .match-status{
+  background-color: green;
+}
+.card.liv .match-status{
+  background-color: orange;
+}.card.not .match-status{
+  background-color: grey;
+}
+
+.card.end {
+  background-image: url(../assets/bg-postmatch.jpg);
+}
+
+.card.liv {
+  background-image: url(../assets/bg-live.jpg);
+}
+
+@media (max-width: 870px) {
+  .card {
+    /* Adjust styles for screens up to 870px */
+    padding: 12px;
+  }
+
+  .card .card-header img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card .card-header span {
+    font-size: 12px;
+  }
+
+  .card .match-time {
+    font-size: 10px;
+  }
+
+  .card .result {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .card {
+    /* Adjust styles for screens up to 450px */
+    padding: 8px;
+  }
+
+  .card .card-header img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .card .card-header span {
+    font-size: 10px;
+  }
+
+  .card .match-time {
+    font-size: 8px;
+  }
+
+  .card .result {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    /* Adjust styles for screens up to 320px */
+    padding: 6px;
+  }
+
+  .card .card-header img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .card .card-header span {
+    font-size: 8px;
+  }
+
+  .card .match-time {
+    font-size: 6px;
+  }
+
+  .card .result {
+    font-size: 12px;
+  }
+}

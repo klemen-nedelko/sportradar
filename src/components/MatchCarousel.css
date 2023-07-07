@@ -1,0 +1,31 @@
+.match-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.match-card {
+  width: 300px;
+  margin-bottom: 16px;
+}
+
+.navigation-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.navigation-dots span.active {
+  background-color: #333;
+}
