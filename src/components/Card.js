@@ -10,43 +10,42 @@ const Card = ({ match }) => {
     const matchStatus = match.realcategories[0].tournaments[0].matches[0].status.name;
     const result = match.realcategories[0].tournaments[0].matches[0].result;
 
-    const getTeamCrestURL = teamId => {
-        return `http://ls.betradar.com/ls/crest/big/${teamId}.png`;
-    };
-
 
     const cardClass = `card ${matchStatus.substr(0, 3).toLowerCase()}`;
     return (
         <div className={cardClass}>
-            <div className="card-header">
-                <img src={getTeamCrestURL(homeTeam.uid)} alt={homeTeam} />
-                <span>{tournamentName}  -  {tournamentName.seasontypename}</span>
-                <span>{homeTeam.abbr}</span>
-            </div>
-            <div className="card-content">
-                <div className="match">
-                    <div className="team-names">
-                        <span>{homeTeam}</span>
-                        <span> VS </span>
-                        <span>{awayTeam}</span>
+            <div class="card-background-not-started">
+                <div class="card-title">
+                    <p class="card-title">{tournamentName}  -  {tournamentName.seasontypename}</p>
+                    <p class="card-subtitle">{homeTeam.abbr}</p>
+                </div>
+                <div class="card-content">
+                    <div class="match">
+                        <div class="match-team1">
+                            {/* <img src="" alt=""> */}
+                            <p class="team1-name">{homeTeam}</p>
+                            {matchStatus === "Ended" || matchStatus === "Ongoing" ?
+                                <p className="match-team-result secondary-font">{result.home}</p> : ""}
+                        </div>
+                        <div class="match-info">
+                            <p>VS</p>
+                            <p>{time}</p>
+                            <p> {date}</p>
+                        </div>
+                        <div class="match-team2">
+                            {/* <img src="" alt=""> */}
+                            <p class="team2-name">{awayTeam}</p>
+                            {matchStatus === "Ended" || matchStatus === "Ongoing" ?
+                                <p className="match-team-result secondary-font">{result.away}</p> : ""}
+                        </div>
                     </div>
-                    {matchStatus === "Ended" | matchStatus === "Ongoing" ?
-                        <div className="result">
-                            <span>{result.home}</span>
-                            <span> : </span>
-                            <span>{result.away}</span>
-                        </div> : ""}
-                </div>
-
-                <div className="match-time">
-                    <span>{time} </span>
-                    <span> {date}</span>
-                </div>
-                <div className="match-status">
-                    {matchStatus}
+                    <div class="match-status">
+                        <p class="card-status-text">{matchStatus}</p>
+                    </div>
                 </div>
             </div>
         </div>
+        // </div >
     );
 };
 

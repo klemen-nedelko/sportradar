@@ -1,15 +1,9 @@
 .card {
-  /* Common styles for all match statuses */
-  background-color: #f2f2f2;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 450px;
-  color: white;
-}
+  background-color: rgb(65, 64, 63);
+ }
 
 .match-card{
   width: 450px !important;
@@ -42,14 +36,14 @@
 
 .card .match  {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 4px;
   font-weight: bold;
   gap: 30px;
 }
 
-.card .match-time {
+/* .card .match-time {
   color: #ffffff;
   font-size: 12px;
 }
@@ -62,7 +56,7 @@
     justify-content: center;
     display: flex;
     gap: 30px;
-}
+} */
 
 .card .match-status {
   font-weight: bold;
@@ -90,6 +84,92 @@
 
 .card.liv {
   background-image: url(../assets/bg-live.jpg);
+}
+
+.match-team2{
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+.match-team1{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.match{
+
+}
+.match-team-result{
+
+}
+
+body{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+.container{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.card{
+    border-radius: 15px;
+    width: 650px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    height: fit-content;
+}
+.card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top:5px;
+    gap: 10px;
+}
+.card-content{
+    padding: 20px;
+}
+.match{
+    display: flex;
+    justify-content:space-around;
+}
+.match-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.match-status{
+    padding: 10px;
+    display: flex;
+    justify-content:center;
+}
+.card-status-text{
+    padding:2px;
+    border-radius: 5px;
+    background-color: var(--color-prematch);
+    padding-left:20px;
+    padding-right: 20px;
+}
+.ongoing{
+    background-color: var(--color-ongoing);
+}
+.ended{
+    background-color:var(--color-ended);
+}
+.match-info-ongoing-ended{
+    display:flex;
+    flex-direction:row;
+    gap: 10px;
 }
 
 @media (max-width: 870px) {
